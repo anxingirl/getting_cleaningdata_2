@@ -19,10 +19,24 @@ run_analysis.R script try to clean and produce tidy data from files.
 7. user ddply() function to apply mean function to get tidy average of each variable for each activity and each subject.
 
 
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. These signals were used to estimate variables of the feature vector for each pattern.
+
+
 the final data set contain the average of each variables(only the variables with name contains ‘std’ or ‘mean’) by subject and activity.
- [1] "subject" : the subject who took the test.                       
- [2] "Activity"  : the activity was took                      
+ [1] "subject" : refers to the volunteer from whom the measurements were taken. The individuals in the study are simply given a number from 1 to 30
+ [2] "Activity"  : refers to the activity being performed by the volunteer when measurements were taken. This may be either WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING                     
+ the rest:
+ The features selected for this database come from the accelerometer and gyroscope 3-axial raw 
+signals tAcc-XYZ and tGyro-XYZ. These time domain signals were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner 
+frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and 
+gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter
+with a corner frequency of 0.3 Hz. Subsequently, the body linear acceleration and angular velocity
+were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm
+(tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ,
+fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. 
+These signals were used to estimate variables of the feature vector for each pattern.
  [3] "tBodyAcc-mean()-X"           
  [4] "tBodyAcc-mean()-Y"              
  [5] "tBodyAcc-mean()-Z"              

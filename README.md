@@ -1,10 +1,10 @@
 getting_cleaningdata_2
 ======================
 file:
-README.md 
-run_analysis.R: the R script,contain two functions 
-code_Book.txt : explain the processes in run_analysis.R file and the meaning of clean_data.txt
-
+'README.md' - YOU ARE HERE
+'Codebook.md' - Description of how data was obtained from the original set,as well as a dictionary of variable names
+'run_analysis.R' - an R language script that generates the tidy summary dataset from the original UCI HAR dataset, then saves the results to file. The various functions of the script are described throughout with comments. In addition to the output file, the script also generates the data frame "accel_data", a commpiled version of all the summary data in the original set (which is separated into 6 files there) with appropriate variable names
+'Acceleration Data Summary.txt' - the final dataset containing the high-level summary described above. Data is in csv format and has a header of variable names
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 Data for the project: 
